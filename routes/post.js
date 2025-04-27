@@ -18,12 +18,12 @@ router.post('/', async (req, res) => {
 
 // Ruta para obtener todos los posts
 router.get('/', async (req, res) => {
-    try {
-        const posts = await Post.find();
-        res.json(posts);
-    } catch (error) {
-        res.status(400).json({ message: error.message });
-    }
+  try {
+    const productos = await Product.find();
+    res.json(productos);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
 });
 
 module.exports = router;

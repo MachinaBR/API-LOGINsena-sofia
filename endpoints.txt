@@ -1,0 +1,38 @@
+ENDPOINTS DE LA API
+
+1. Registro de usuario
+   Método: POST
+   URL: http://localhost:10000/auth/register
+   Body JSON:
+   {
+     "username": "usuario",
+     "password": "contraseña"
+   }
+
+2. Inicio de sesión (Login)
+   Método: POST
+   URL: http://localhost:10000/auth/login
+   Body JSON:
+   {
+     "username": "usuario",
+     "password": "contraseña"
+   }
+
+3. Crear servicio
+   Método: POST
+   URL: http://localhost:10000/servicios
+   Body JSON:
+   {
+     "title": "Título del servicio",
+     "content": "Contenido del servicio"
+   }
+
+4. Listar servicios
+   Método: GET
+   URL: http://localhost:10000/servicios
+   Body: No requiere body
+
+Notas:
+- Todas las peticiones usan formato JSON.
+- Asegurarse de enviar encabezado Content-Type: application/json.
+- La API responde con objetos o mensajes según la operación realizada.
